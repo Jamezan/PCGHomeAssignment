@@ -25,7 +25,7 @@ public class Building : MonoBehaviour
     building.AddComponent<Wall>();
     building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
     
-    building.transform.position = new Vector3(0, 0, -50f);
+    building.transform.position = new Vector3(19f, 29f, -50f);
     building.transform.localScale = new Vector3(10f, 40f, 10f);
     }
 }
