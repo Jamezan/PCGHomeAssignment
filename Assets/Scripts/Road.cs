@@ -24,7 +24,7 @@ public class Road : MonoBehaviour
         road.AddComponent<Wall>();
         road.GetComponent<Wall>().initialiseWall(roadLengthSize, roadHeightSize, initialisePosition);
         
-        road.transform.position = new Vector3(0, 0, 0);
+        road.transform.localPosition = new Vector3(0, 0, 0);
         road.transform.Rotate(90, 0, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
     }
@@ -40,7 +40,7 @@ public class Road : MonoBehaviour
         road.AddComponent<Wall>();
         road.GetComponent<Wall>().initialiseWall(roadLengthSize, roadHeightSize, initialisePosition);
         
-        road.transform.position = new Vector3(30f, 0, 100f);
+        road.transform.localPosition = new Vector3(30f, 0, 100f);
         road.transform.Rotate(90, 90, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
     }
@@ -56,7 +56,7 @@ public class Road : MonoBehaviour
         road.AddComponent<Wall>();
         road.GetComponent<Wall>().initialiseWall(roadLengthSize, roadHeightSize, initialisePosition);
         
-        road.transform.position = new Vector3(140f, 0, 100f);
+        road.transform.localPosition = new Vector3(140f, 0, 100f);
         road.transform.Rotate(90, 90, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
     }
