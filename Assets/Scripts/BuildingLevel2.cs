@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Building : MonoBehaviour
+public class BuildingLevel2 : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +13,10 @@ public class Building : MonoBehaviour
         CreateBuilding4();
         CreateBuilding5();
         CreateBuilding6();
+        CreateBuilding7();
+        CreateBuilding8();
+        CreateBuilding9();
+        CreateBuilding10();
     }
 
     private void CreateBuilding(){
@@ -24,13 +27,13 @@ public class Building : MonoBehaviour
     Vector3 initialisePosition = new Vector3(0,0,10f);
 
     GameObject building = new GameObject();
-    building.name = "Building1";
+    building.name = "Building";
     building.transform.parent = this.transform;
     building.AddComponent<Wall>();
     building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
     
-    //-71 - -20
-    building.transform.localPosition = new Vector3(19f, 29f, Random.Range(-71f, -20f));
+    //-60 - -120
+    building.transform.localPosition = new Vector3(14f, 29f, Random.Range(-60f, -120f));
     building.transform.localScale = new Vector3(10f, 40f, 10f);
     }
     private void CreateBuilding2(){
@@ -46,8 +49,8 @@ public class Building : MonoBehaviour
     building.AddComponent<Wall>();
     building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
     
-    //-111 - -160
-    building.transform.localPosition = new Vector3(19f, 29f, Random.Range(-111f, -160f));
+    //-21 - 10
+    building.transform.localPosition = new Vector3(14f, 29f, Random.Range(-21f, 10f));
     building.transform.localScale = new Vector3(10f, 40f, 10f);
     }
     private void CreateBuilding3(){
@@ -63,8 +66,8 @@ public class Building : MonoBehaviour
     building.AddComponent<Wall>();
     building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
     
-    //-111 - -160
-    building.transform.localPosition = new Vector3(170f, 29f, Random.Range(-111f, -160f));
+    //-160 - -170
+    building.transform.localPosition = new Vector3(14f, 29f, Random.Range(-160f, -170f));
     building.transform.localScale = new Vector3(10f, 40f, 10f);
     }
     private void CreateBuilding4(){
@@ -80,8 +83,8 @@ public class Building : MonoBehaviour
     building.AddComponent<Wall>();
     building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
     
-    //-71 - -20
-    building.transform.localPosition = new Vector3(170f, 29f, Random.Range(-71f, -20f));
+    //119 - 55
+    building.transform.localPosition = new Vector3(Random.Range(119f, 55f), 29f, -161f);
     building.transform.localScale = new Vector3(10f, 40f, 10f);
     }
     private void CreateBuilding5(){
@@ -97,8 +100,8 @@ public class Building : MonoBehaviour
     building.AddComponent<Wall>();
     building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
     
-    //-71 - 0
-    building.transform.localPosition = new Vector3(Random.Range(59f, 129f), 29f, -71f);
+    //224 - 159
+    building.transform.localPosition = new Vector3(Random.Range(224f, 159f), 29f, -161f);
     building.transform.localScale = new Vector3(10f, 40f, 10f);
     }
     private void CreateBuilding6(){
@@ -114,8 +117,76 @@ public class Building : MonoBehaviour
     building.AddComponent<Wall>();
     building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
     
-    //-71 - 0
-    building.transform.localPosition = new Vector3(Random.Range(59f, 129f), 29f, -111f);
+    //-60 - -120
+    building.transform.localPosition = new Vector3(264f, 29f, Random.Range(-60f, -120f));
+    building.transform.localScale = new Vector3(10f, 40f, 10f);
+    }
+    private void CreateBuilding7(){
+
+
+    int buildingLengthSize = 1; 
+    int buildingHeightSize = 1; 
+    Vector3 initialisePosition = new Vector3(0,0,10f);
+
+    GameObject building = new GameObject();
+    building.name = "Building7";
+    building.transform.parent = this.transform;
+    building.AddComponent<Wall>();
+    building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
+    
+    //224 - 159
+    building.transform.localPosition = new Vector3(Random.Range(224f, 159f), 29f, -21f);
+    building.transform.localScale = new Vector3(10f, 40f, 10f);
+    }
+    private void CreateBuilding8(){
+
+
+    int buildingLengthSize = 1; 
+    int buildingHeightSize = 1; 
+    Vector3 initialisePosition = new Vector3(0,0,10f);
+
+    GameObject building = new GameObject();
+    building.name = "Building8";
+    building.transform.parent = this.transform;
+    building.AddComponent<Wall>();
+    building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
+    
+    //119 - 55
+    building.transform.localPosition = new Vector3(Random.Range(119f, 55f), 29f, -21f);
+    building.transform.localScale = new Vector3(10f, 40f, 10f);
+    }
+    private void CreateBuilding9(){
+
+
+    int buildingLengthSize = 1; 
+    int buildingHeightSize = 1; 
+    Vector3 initialisePosition = new Vector3(0,0,10f);
+
+    GameObject building = new GameObject();
+    building.name = "Building9";
+    building.transform.parent = this.transform;
+    building.AddComponent<Wall>();
+    building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
+    
+    //-160 - -170
+    building.transform.localPosition = new Vector3(264f, 29f, Random.Range(-160f, -170f));
+    building.transform.localScale = new Vector3(10f, 40f, 10f);
+    }
+    private void CreateBuilding10(){
+
+
+    int buildingLengthSize = 1; 
+    int buildingHeightSize = 1; 
+    Vector3 initialisePosition = new Vector3(0,0,10f);
+
+    GameObject building = new GameObject();
+    building.name = "Building10";
+    building.transform.parent = this.transform;
+    building.AddComponent<Wall>();
+    building.GetComponent<Wall>().initialiseWall(buildingLengthSize, buildingHeightSize, initialisePosition);
+    
+    //-21 - 10
+    building.transform.localPosition = new Vector3(264f, 29f, Random.Range(-21f, 10f));
     building.transform.localScale = new Vector3(10f, 40f, 10f);
     }
 }

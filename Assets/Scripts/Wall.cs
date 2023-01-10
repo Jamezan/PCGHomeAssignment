@@ -45,6 +45,7 @@ public class Wall : MonoBehaviour
                 cube.AddComponent<Cube>();
                 cube.transform.position = nextPosition;
                 cube.transform.parent = this.transform;
+                cube.AddComponent<BoxCollider>();
 
                 nextPosition.x = cube.GetComponent<Cube>().CubeSize().x + nextPosition.x;
                 cubeHeight = cube.GetComponent<Cube>().CubeSize().y;
