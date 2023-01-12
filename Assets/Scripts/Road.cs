@@ -31,6 +31,10 @@ public class Road : MonoBehaviour
         road.transform.localPosition = new Vector3(0, 0, 0);
         road.transform.Rotate(90, 0, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
+        BoxCollider collider = road.AddComponent<BoxCollider>();
+        collider.center = new Vector3(9.022366f, 9.022366f, 11f);
+        collider.size = new Vector3(20.25608f, 21.9303f, 3.985396f);
+        
     }
     private void CreateRoad1() {
 
@@ -47,6 +51,9 @@ public class Road : MonoBehaviour
         road.transform.localPosition = new Vector3(30f, 0, 100f);
         road.transform.Rotate(90, 90, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
+        BoxCollider collider = road.AddComponent<BoxCollider>();
+        collider.center = new Vector3(9.022366f, 9.022366f, 11f);
+        collider.size = new Vector3(20.25608f, 21.9303f, 3.985396f);
     }
     private void CreateRoad2() {
 
@@ -63,6 +70,9 @@ public class Road : MonoBehaviour
         road.transform.localPosition = new Vector3(140f, 0, 100f);
         road.transform.Rotate(90, 90, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
+        BoxCollider collider = road.AddComponent<BoxCollider>();
+        collider.center = new Vector3(9.022366f, 9.022366f, 11f);
+        collider.size = new Vector3(20.25608f, 21.9303f, 3.985396f);
     }
     private void CreateRoad3() {
 
@@ -79,6 +89,9 @@ public class Road : MonoBehaviour
         road.transform.localPosition = new Vector3(0, 0, 91f);
         road.transform.Rotate(90, 0, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
+        BoxCollider collider = road.AddComponent<BoxCollider>();
+        collider.center = new Vector3(9.022366f, 9.022366f, 11f);
+        collider.size = new Vector3(20.25608f, 21.9303f, 3.985396f);
     }
     private void CreateRoad4() {
 
@@ -95,6 +108,9 @@ public class Road : MonoBehaviour
         road.transform.localPosition = new Vector3(0, 0, -90f);
         road.transform.Rotate(90, 0, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
+        BoxCollider collider = road.AddComponent<BoxCollider>();
+        collider.center = new Vector3(9.022366f, 9.022366f, 11f);
+        collider.size = new Vector3(20.25608f, 21.9303f, 3.985396f);
     }
     private void CreateRoad5() {
 
@@ -111,6 +127,9 @@ public class Road : MonoBehaviour
         road.transform.localPosition = new Vector3(-29f, 0, 100f);
         road.transform.Rotate(90, 90, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
+        BoxCollider collider = road.AddComponent<BoxCollider>();
+        collider.center = new Vector3(9.022366f, 9.022366f, 11f);
+        collider.size = new Vector3(20.25608f, 21.9303f, 3.985396f);
     }
     private void CreateRoad6() {
 
@@ -127,5 +146,8 @@ public class Road : MonoBehaviour
         road.transform.localPosition = new Vector3(190f, 0, 100f);
         road.transform.Rotate(90, 90, 0, Space.Self);
         road.transform.localScale = new Vector3(10f, 1f, 1f);
+        BoxCollider collider = road.AddComponent<BoxCollider>();
+        collider.center = new Vector3(9.022366f, 9.022366f, 11f);
+        collider.size = new Vector3(20.25608f, 21.9303f, 3.985396f);
     }
 }
